@@ -1,0 +1,13 @@
+
+
+:root{
+    --color-main: #337CFC;
+    --color-main-muted: #609AFF;
+    --color-red: #FF0000;
+    --color-white-background: #F4F7FF;
+    --color-white: #fff;
+    --font-color: #2A2A2A;
+    --font-color-muted: #565656;
+
+    --content-width: 1163px;
+}
