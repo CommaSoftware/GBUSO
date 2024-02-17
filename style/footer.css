@@ -1,34 +1,43 @@
 
-footer{
+footer {
     position: relative;
 }
+footer a {
+    text-decoration: none;
+    color: var(--color-white-ef);
+    
+}
 
-.footer-wrapper ul{
+.footer-wrapper ul {
     list-style: none;
 }
-.footer-wrapper a{
+.footer-wrapper a {
     text-decoration: none;
-    color: var(--color-white-background);
+    color: var(--color-white-ef);
 }
-.footer-wrapper span{
-    color: var(--color-white-background);
+.footer-wrapper span {
+    color: var(--color-white-ef);
 }
 
 
-.footer-wave{
+.footer-wave {
     position: absolute;
-    left: 42%;
     z-index: -1;
-    transform: translate(-50%);
-    width: 120%;
+    overflow: hidden;
+    width: 100%;
 }
-.footer-wave-corrector{
+.footer-wave svg { 
+    transform: translate(-15%);
+    width: 120%;
+
+}
+.footer-wave-corrector {
     height: fit-content;
     position: relative;
     padding: 7vw 0px 0px 0px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,14 +45,59 @@ footer{
 }
 
 
-.footer-logo .header-logo{
+.footer-logo .header-logo {
     border-right: 2px solid var(--color-white);
-    height: 40px;
+    height: var(--space-3);
 }
-.footer-logo .header-logo a{
+.footer-logo .header-logo a {
     color: var(--color-white);
 }
-.footer-grid{
+.footer-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin: var(--space-3) 0px 0px 0px;
+}
+
+.footer-column {
+    margin: 0px var(--space-3) 0px 0px;
+}
+
+.footer-column-title {
+    font-size: var(--h4);
+    font-weight: 500;
+}
+
+.footer-column ul li {
+    margin: var(--space-2) 0px;
+}
+
+.footer-column ul a {
+    font-size: var(--font-size);
+    font-weight: 300;
+}
+.footer-column ul img {
+    max-width: 13px;
+    filter: invert();
+    opacity: 0.7;
+}
+
+
+
+.muted-line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-white);
+    opacity: 0.36;
+}
+.footer-content.comma-ad .content {
+    height: var(--space-4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content.comma-ad .content a {
+    font-size: var(--font-size);
+    font-weight: 300;
+    color: var(--color-white);
 }

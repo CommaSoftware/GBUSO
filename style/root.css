@@ -1,13 +1,41 @@
 
 
-:root{
+:root {
     --color-main: #337CFC;
     --color-main-muted: #609AFF;
     --color-red: #FF0000;
-    --color-white-background: #F4F7FF;
     --color-white: #fff;
+    --color-white-background: #F4F7FF;
+    --color-white-ef: #EFEFEF;
     --font-color: #2A2A2A;
     --font-color-muted: #565656;
 
     --content-width: 1163px;
+
+    --font-size-logo: 48px;
+    --font-size-biggest: 55px;
+    --h1:40px;
+    --h2:35px;
+    --h3:25px;
+    --h4:20px;
+    --font-size: 15px;
+    --font-size-small: 12px;
+    --font-size-smallest: 10px;
+
+    --card-width: 360px;
+    --card-height: 239px;
+
+    /* --space-1: 120px;
+    --space-2: 80px;
+    --space-3: 40px;
+    --space-4: 20px;
+    --space-5: 10px; */
+
+    --space-1: 10px;
+    --space-2: 20px;
+    --space-3: 40px;
+    --space-4: 80px;
+    --space-5: 120px;
+
+
 }

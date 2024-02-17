@@ -1,39 +1,28 @@
 
-.nav-main{
-    margin: 0px 0px 0px 20px;
+.nav-main {
+    margin: 0px 0px 0px var(--space-2);
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.nav-main a{
+.nav-main a {
     color:var(--font-color-muted);
 }
-.nav-main > ul{
+.nav-main > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
 }
-.nav-main > ul li{
-    margin: 0px 20px 0px 0px ;
+.nav-main > ul li {
+    margin: 0px var(--space-2) 0px 0px ;
 }
 
-.nav-main > ul li.link-active > a {
-    color: var(--font-color)
-}
-
-
-
-/* .nav-main > *{
-    margin: 0px 20px 0px 0px ;
-}
-.nav-main > *.active{
+.link-active a  {
     color: var(--font-color);
-} */
+}
 
-
-
-.nav-main-link{
+.nav-main-link {
     font-weight: 400;
     font-size: 15px;
     letter-spacing: -1px;
