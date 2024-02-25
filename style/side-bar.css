@@ -1,0 +1,88 @@
+
+.side-bar{
+    min-width: var(--card-width);
+}
+
+.side-bar > .card{
+    max-width: var(--card-width);
+    margin: 0px 0px var(--space-2) 0px;
+}
+
+.card.links{
+    padding: var(--space-1);
+}
+.card.links >*{
+    margin: var(--space-1);
+}
+
+.card.links ul{
+    padding: var(--space-1) 0px 0px 0px;
+}
+
+.card.links li a{
+    display: block;
+    padding: 0px 0px var(--space-2) 0px;
+}
+
+.card.links li a:hover{
+    text-decoration: underline;
+}
+
+
+.card.links li span,
+.card.contact li span{
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+
+.card.links.title ul{
+    padding: 0;
+}
+
+.card.links.title{
+    padding: var(--space-2);
+}
+
+.card.links.title >*{
+    margin: 0px;
+}
+
+.card.links.title li span{
+    margin: var(--space-2) 0px 0px 0px;
+}
+
+.card.links.title li a {
+    padding: 0;
+}
+
+
+.card.ad .card-content a:first-child{
+    font-size: var(--h4);
+    font-weight: 500;
+}
+
+
+
+
+
+
+.card a[href^="tel"] {
+    padding-left: 20px !important;
+    background: url('/icons/phone.png') no-repeat left center;
+    filter: var(--black-to-main);
+    background-size: 15px 15px;
+    background-position: left center;
+
+}
+
+.card a[href^="mailto"] {
+    padding-left: 20px !important;
+    background: url('/icons/email.png') no-repeat left center;
+    filter: var(--black-to-main);
+    background-size: 15px 15px;
+    background-position: left center;
+
+}

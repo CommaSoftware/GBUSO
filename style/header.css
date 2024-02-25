@@ -19,6 +19,7 @@ header .content {
 
 
 .header-wrapper {
+    padding: 0px 10px;
     display: flex;
     flex-direction: row;
     max-height: var(--space-3);

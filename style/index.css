@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+ul{
+    list-style: none;
+}
 
 * {
     margin: 0;
@@ -7,6 +10,9 @@
     font-family: "Inter", sans-serif;
     line-height: -0.01%;
     color: var(--font-color);
+}
+a {
+    text-decoration: none;
 }
 
 body {
@@ -22,3 +28,36 @@ body {
     align-self: center;
 }
 
+
+form input,
+form textarea,
+form button{
+    padding: var(--space-2);
+}
+form input,
+form button{
+    border-radius: var(--space-3);
+}
+
+form textarea{
+    border-radius: var(--space-2);
+}
+
+
+a[href^="tel"] {
+    padding-left: 20px !important;
+    background: url('/icons/phone.png') no-repeat left center;
+    color: var(--font-color);
+    background-size: 15px 15px;
+    background-position: left center;
+
+}
+
+a[href^="mailto"] {
+    padding-left: 20px !important;
+    background: url('/icons/email.png') no-repeat left center;
+    color: var(--font-color);
+    background-size: 15px 15px;
+    background-position: left center;
+
+}

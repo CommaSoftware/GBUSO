@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: 0px 0px var(--space-4) 0px;
 }
 .main-banner a {
     text-decoration: none;
@@ -71,17 +72,11 @@
 
 .main-banner-link {
     margin: var(--space-3) 0px 0px 0px;
-    border: 2px solid var(--color-white);
-    padding: 18px 60px;
-    width: min-content;
-    border-radius: 36px;
-}
-.main-banner-link a {
-    font-size: var(--font-size);
-    font-weight: 600;
-    color: var(--color-white);
 }
 
+.main-banner .content >*{
+    padding: 0px 10px;
+}
 
 
 
