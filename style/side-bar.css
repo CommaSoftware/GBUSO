@@ -1,6 +1,7 @@
 
 .side-bar{
     min-width: var(--card-width);
+    
 }
 
 .side-bar > .card{

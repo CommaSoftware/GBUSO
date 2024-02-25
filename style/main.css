@@ -30,6 +30,12 @@ main {
     border-radius: 36px;
     display: inline-block;
 }
+/* Hover effect */
+.border-btn:hover{
+    color: var(--color-main) !important;
+    background-color: var(--color-white);
+}
+/* / */
 
 
 
@@ -93,6 +99,8 @@ main {
     padding: 0;
     margin: 0;
 }
+
+
 .card.info.link-to >*{
     margin: 0 ;
 }
@@ -111,6 +119,20 @@ main {
 .card.info.link-to a svg path{
     color: var(--color-main);
 }
+
+/* Hover effects */
+.card.info.link-to:hover{
+    border: 2px solid var(--color-main);
+    background-color: var(--color-main);
+    box-shadow: 0px 0px 10px 3px var(--color-gray);
+}
+.card.info.link-to a:hover{
+    color: var(--color-white-background);
+}
+.card.info.link-to a:hover svg path{
+    color: var(--color-white-background);
+}
+/* / */
 
 
 .card.another-service{
@@ -220,6 +242,17 @@ main {
 }
 
 
+/* Hover effects */
+
+.to-view-btn:hover {
+    background-color: var(--color-main);
+    color:var(--color-white-background);
+}
+.to-view-btn:hover path{
+    color: var(--color-white-background);
+}
+/* / */
+
 
 
 
@@ -314,6 +347,8 @@ main {
 
 
 .location-widget{
+    border-radius: 20px;
+    overflow: hidden;
     width: 100%;
     max-height:442px;
 }

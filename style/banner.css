@@ -70,6 +70,8 @@
     display: block;
 }
 
+
+
 .main-banner-link {
     margin: var(--space-3) 0px 0px 0px;
 }
@@ -77,8 +79,6 @@
 .main-banner .content >*{
     padding: 0px 10px;
 }
-
-
 
 
 .main-banner-background-wave {

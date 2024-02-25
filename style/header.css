@@ -63,6 +63,16 @@ header .content {
     padding: 0px 0px 0px var(--space-1);
 }
 
+/* Hover effect */
+.header-logo-additional:hover .header-dropdown-menu {
+    display: flex;
+}
+
+.dropdown-link:hover .header-dropdown-menu{
+    display: flex;
+}
+/* / */
+
 .header-logo-additional span {
     letter-spacing: -0.9px;
     font-weight: 400;
@@ -81,17 +91,21 @@ header .content {
     position: absolute;
     width: 380px;
     background-color: var(--color-white-background);
-    top:var(--space-5);
-    display: flex;
+    top:var(--space-4);
+    display: none;
     flex-direction: column;
     list-style: none;
-    padding: var(--space-1);
+    padding: var(--space-3) var(--space-1) var(--space-1) var(--space-1);
     border-end-start-radius: 20px;
     border-end-end-radius: 20px;
 }
-.header-dropdown-menu.hide {
-    display: none;
+
+/* Hover effect */
+.header-dropdown-menu:hover{
+    display: flex;
 }
+/* / */
+
 .header-dropdown-menu li {
     padding: var(--space-1);
 }
