@@ -8,14 +8,27 @@
 
 .nav-main a {
     color:var(--font-color-muted);
+    align-self: center
 }
 .nav-main > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
+
+.dropdown-link{
+    height: 100%;
+    display: flex;
+}
+/* Hover effect */
+.dropdown-link:hover .header-dropdown-menu{
+    display: flex;
+}
+/* / */
 .nav-main > ul li {
     margin: 0px var(--space-2) 0px 0px ;
+    display: flex;
 }
 
 .link-active a  {

@@ -68,9 +68,6 @@ header .content {
     display: flex;
 }
 
-.dropdown-link:hover .header-dropdown-menu{
-    display: flex;
-}
 /* / */
 
 .header-logo-additional span {

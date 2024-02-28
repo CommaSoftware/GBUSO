@@ -80,7 +80,6 @@
 }
 
 .card a[href^="mailto"] {
-    padding-left: 20px !important;
     background: url('/icons/email.png') no-repeat left center;
     filter: var(--black-to-main);
     background-size: 15px 15px;

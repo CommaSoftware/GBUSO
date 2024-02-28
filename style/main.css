@@ -8,14 +8,14 @@ main {
 
 
 
-.content.main{
+.content-wrapper{
     margin: 0px 10px;
     display: flex;
     flex-direction: row;
 }
 
 
-.home-content{
+.main-content{
     margin: 0px var(--space-3) 0px 0px;
     max-width: 773px;
 }
@@ -49,7 +49,9 @@ main {
 .view.two{
     grid-template-columns:repeat(2,1fr);
 }
-
+.view.closely{
+    gap: var(--space-2);
+}
 
 
 
@@ -59,6 +61,16 @@ main {
     font-size: var(--h1);
     margin: 0px 0px var(--space-3) 0px;
 }
+
+.page-subtitle{
+    font-size: var(--h4);
+    font-weight: 600;
+    margin: 0px 0px var(--space-2) 0px;
+}
+
+
+
+
 
 .card{
     background-color: var(--color-white);
@@ -166,7 +178,7 @@ main {
     flex-direction: row;
 }
 
-.card.news .news-thumbnail {
+.card.news .card-thumbnail {
     min-width: var(--news-thumbnail-width);
     max-width: var(--news-thumbnail-width);
     /* height: var(--news-thumbnail-height); */
@@ -176,11 +188,13 @@ main {
     align-items: center;
 }
 
-.news-thumbnail img {
+.card-thumbnail img {
     object-fit: cover; 
     width: 100%;
     height: 100%;
 }
+
+
 
 .card .card-content {
     padding: var(--space-2);
@@ -359,4 +373,202 @@ main {
 #interactive-map iframe {
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 110;
+}
+.overlay.show{
+    display: flex;
+}
+.overlay-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.84;
+}
+
+
+
+
+.overlay-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    
+    width: 60vw;
+    height: 65vh;
+    z-index: 1;
+}
+
+.overlay-image-wrapper span{
+    display: block;
+    margin: 0px 0px var(--space-1) 0px;
+    color: var(--color-white);
+    font-size: var(--font-size);
+    font-weight: 600;
+
+}
+.overlay-image-wrapper >div{
+    display: block;
+    object-fit: contain;
+    width: max-content;
+    height: 100%;
+}
+
+.overlay-image-wrapper img{
+    border-radius: 20px;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* Pagination  */
+
+
+.pagination{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrapper{
+    display: flex;
+}
+
+.pagination-btn{
+    color: var(--color-main);
+    margin: 0px var(--space-0-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-main);
+    border-radius: 20px;
+}
+
+.pagination-btn.active{
+    background-color: var(--color-main);
+    color: var(--color-white-background);
+}
+
+
+.pagination-btn.start svg{
+    transform: rotate(90deg);
+}
+
+.pagination-btn.end svg{
+    transform: rotate(-90deg);
+}
+  
+.pagination-btn.start path,
+.pagination-btn.end path{
+    color: var(--color-main);
+}
+
+
+
+
+
+
+/* Person card */
+
+.card.person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card.person .card-thumbnail{
+    min-width: 240px;
+    width: 240px;
+    height: 170px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: var(--space-2);
+}
+.card.person .card-content{
+    padding-left: 0;
+}
+
+.field{
+    padding: 0px 0px var(--space-0-5) 0px;
+}
+
+.field span:first-child{
+    font-size: var(--font-size);
+    font-weight: 300;
+    color: var(--font-color-muted);
+}
+.field p{
+    font-size: var(--h4);
+    font-weight: 400;
+}
+
+
+.card.person .field.fullname span{
+    padding: 0px 0px var(--space-0-5) 0px;
+
+}
+
+
+
+
+
+
+/* Article */
+article{
+    display: flex;
+    flex-direction: column;
+}
+article a{
+    font-size: var(--font-size);
+    color: var(--color-main);
+    width: max-content;
+    margin: 0px 0px var(--space-2) 0px;
+}
+
+/* Hover effect */
+article a:hover{
+    text-decoration: underline;
+}
+/* / */
+
+
+article .field{
+    padding: 0px 0px var(--space-2) 0px;
+}
+article .field span:first-child{
+    padding: 0px 0px 3px 0px;
+    display: block;
+}
+
+article .field.text-area{
+    line-height: 1.7;
 }
