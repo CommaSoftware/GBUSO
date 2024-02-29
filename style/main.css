@@ -17,7 +17,8 @@ main {
 
 .main-content{
     margin: 0px var(--space-3) 0px 0px;
-    max-width: 773px;
+    max-width: var(--main-content-width);
+    width: 100%;
 }
 
 
@@ -44,13 +45,15 @@ main {
     display: grid;
     gap: var(--space-3);
     flex-direction: column;
-    margin: 0px 0px var(--space-4);
+    margin: 0px 0px var(--space-4) 0px;
+	counter-reset: num;
 }
 .view.two{
     grid-template-columns:repeat(2,1fr);
 }
 .view.closely{
     gap: var(--space-2);
+    margin-bottom: var(--space-2);
 }
 
 
@@ -91,8 +94,14 @@ main {
 }
 .card a{
     text-decoration: none;
+    font-size: var(--font-size);
     color: var(--color-main);
 }
+/* Hover effect */
+.card a:hover{
+    text-decoration: underline;
+}
+/* / */
 
 
 .card.info{
@@ -102,7 +111,6 @@ main {
 .card.info >*{
     margin: var(--space-1) ;
 }
-
 
 
 .card.info.link-to{
@@ -569,6 +577,49 @@ article .field span:first-child{
     display: block;
 }
 
-article .field.text-area{
+article .field.full-text{
     line-height: 1.7;
+}
+article .field.full-text li{
+    font-size: var(--h4);
+    font-weight: 400;
+}
+
+
+
+/* 
+.view.numerable {
+    list-style-type: none; 
+	counter-reset: num;
+}
+.view.numerable .card.info{
+    overflow: visible;
+} */
+
+.view{
+     
+}
+
+
+.card.info.numerable{
+    position: relative;
+    overflow: visible;
+
+}
+.card.info.numerable::before{
+    content: counter(num); 
+	counter-increment: num;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-main);
+    border-radius: 15px;
+    color: var(--color-white-background);
+    font-size: var(--font-size);
+
+    position: absolute;
+    left: 20px;
+    top: -15px;
 }

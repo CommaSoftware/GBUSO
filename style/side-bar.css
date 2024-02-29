@@ -6,7 +6,7 @@
 
 .side-bar > .card{
     max-width: var(--card-width);
-    margin: 0px 0px var(--space-2) 0px;
+    margin: 0px 0px var(--space-3) 0px;
 }
 
 .card.links{
@@ -25,9 +25,6 @@
     padding: 0px 0px var(--space-2) 0px;
 }
 
-.card.links li a:hover{
-    text-decoration: underline;
-}
 
 
 .card.links li span,
