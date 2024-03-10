@@ -588,7 +588,7 @@ article{
 article a{
     font-size: var(--font-size);
     color: var(--color-main);
-    width: max-content;
+    /* width: max-content;s */
     margin: 0px 0px var(--space-2) 0px;
 }
 
@@ -598,13 +598,21 @@ article a:hover{
 }
 /* / */
 
-
+article p{
+    margin-bottom: var(--space-3);
+}
 article .field{
     padding: 0px 0px var(--space-2) 0px;
 }
 article .field span:first-child{
     padding: 0px 0px 3px 0px;
     display: block;
+}
+article img{
+    border-radius: 20px;
+}
+article .preview img{
+    width: 100%;
 }
 
 article .field.full-text{
@@ -746,6 +754,7 @@ article .field.full-text li{
     .footer-column ul li{
         margin: var(--space-0-5) 0px !important;
     }
+    
  }
  @media (max-width: 550px) {
     .view.two{
@@ -770,5 +779,17 @@ article .field.full-text li{
     }
     .overlay-img{
         height: auto !important;
+    }
+
+
+
+    .card.person .card-thumbnail {
+        min-width: 0px !important;
+        width: 180px ;
+        height: 135px;
+        margin: var(--space-1);
+    }
+    .card .card-content {
+        padding: var(--space-1);
     }
  }
