@@ -83,3 +83,32 @@
     background-position: left center;
 
 }
+
+
+
+
+/*
+ *
+ *
+ *  MOBILE STYLE REGION 
+ *
+ *
+ */
+
+@media (max-width: 1180px) {
+    .side-bar > .card{
+        margin: 0px 0px var(--space-2) 0px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .side-bar{
+        margin-top: var(--space-2);
+    }
+}
+@media (max-width: 720px) {
+    .side-bar .card{
+        max-width: none;
+    }
+    
+}

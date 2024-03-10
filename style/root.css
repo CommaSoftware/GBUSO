@@ -51,3 +51,15 @@
     --black-to-main: invert(43%) sepia(83%) saturate(3608%) hue-rotate(207deg) brightness(101%) contrast(101%);
 
 }
+@media (max-width: 920px) {
+    
+    :root {
+        --font-size-logo: 25px;
+        --font-size-smallest: 7px;
+        
+        --news-thumbnail-height: 200px;
+
+        --h1: 22px;
+        --h4: 18px;
+    }
+}

@@ -6,6 +6,10 @@ let overlayImgWrapperRef = document.querySelector(".overlay-image-wrapper");
 let overlayImgRef = document.querySelector(".overlay-img");
 let overlayImgNameRef = document.querySelector(".overlay-img-name");
 
+let navBtnRef = document.querySelector('.nav-btn');
+let headerWrapperRef = document.querySelector(".header-wrapper");
+
+
 let altImageName;
 let openedImgPath;
 
@@ -59,3 +63,21 @@ setTimeout(() => {
         document.querySelector("iframe").remove();
       }
 }, 1000);
+
+
+
+
+
+
+//Header button handler
+
+navBtnRef.addEventListener("click",()=>{
+    if(headerWrapperRef.classList.contains("show")){
+        console.log("has");
+        headerWrapperRef.classList.remove("show");
+    }
+    else{
+        console.log("not has");
+        headerWrapperRef.classList.add("show");
+    }
+});

@@ -40,3 +40,82 @@
     font-size: 15px;
     letter-spacing: -1px;
 }
+
+
+
+
+
+
+
+
+/*
+ *
+ *
+ *  MOBILE STYLE REGION 
+ *
+ *
+ */
+
+@media (max-width: 1180px) {
+    
+
+    .nav-main>ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media (max-width: 1030px) {
+    
+
+    .nav-main>ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 920px) {
+    .nav-curtain{
+        position: absolute;
+        background-color: var(--color-white-background);
+    }
+
+
+
+
+
+
+    .nav-curtain{
+        
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - var(--space-4)) ;
+        justify-content: space-between;
+        z-index: -1;
+        flex-direction: column !important;
+        padding: var(--space-4) 0px 0px 0px;
+    }
+    .nav-main{
+        margin-left: var(--space-1);
+    }
+    .nav-main ul{
+        width: 100%;
+    }
+    .nav-main > ul{
+        margin: var(--space-2) 0px 0px 0px ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-feedback{
+        padding: var(--space-2) 25px var(--space-2) var(--space-2);
+        flex-direction: column;
+    }
+    .header-feedback * {
+        margin-bottom: var(--space-1);
+        width: 100%;
+    }
+
+
+}
