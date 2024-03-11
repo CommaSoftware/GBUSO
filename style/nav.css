@@ -108,12 +108,16 @@
         flex-direction: column;
     }
 
+	.nav-main > ul > li:not(:first-child) {
+        margin-top: var(--space-2);
+    }
+
     .header-feedback{
-        padding: var(--space-2) 25px var(--space-2) var(--space-2);
-        flex-direction: column;
+        padding: var(--space-2) 10px;
+		gap: var(--space-1);
+        /* flex-direction: column; */
     }
     .header-feedback * {
-        margin-bottom: var(--space-1);
         width: 100%;
     }
 

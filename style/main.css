@@ -388,8 +388,7 @@ main {
 
 .feedback form  div p{
     padding: 0px var(--space-2) ;
-    width: 100%;
-    font-size: var(--font-size-smallest);
+    font-size: 10px;
     color: var(--color-white-muted);
 }
 .feedback form div p a{
@@ -767,6 +766,14 @@ article .field.full-text li{
     .card{
         min-height: auto;
     }
+	.feedback form div{
+		flex-direction: column;
+	}
+
+	.feedback form  div p{
+		margin: var(--space-2);
+		text-align: center;
+	}
 
 
     .overlay-image-wrapper{

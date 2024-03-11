@@ -22,7 +22,6 @@ header .content {
     padding: 0px 10px;
     display: flex;
     flex-direction: row;
-    max-height: var(--space-3);
 }
 .header-wrapper a {
     text-decoration: none;
@@ -36,7 +35,7 @@ header .content {
 
 .header-logo-wrapper {
     display: flex;
-    flex-direction: row;
+	align-items: center;
     max-width: 404px;
 }
 .header-logo {
@@ -56,12 +55,12 @@ header .content {
 
 
 
-.header-logo-additional  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 0px 0px var(--space-1);
-}
+.header-logo-additional {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 0px 0px var(--space-1);
+  }
 
 /* Hover effect */
 .header-logo-additional:hover .header-dropdown-menu {
@@ -71,6 +70,7 @@ header .content {
 /* / */
 
 .header-logo-additional span {
+	margin-bottom: 5px;
     letter-spacing: -0.9px;
     font-weight: 400;
     font-size: var(--font-size-small);
@@ -121,12 +121,12 @@ header .content {
 
 .header-feedback {
     display: flex;
+	gap: 5px;
     flex-direction: row;
     align-items: center;
 }
 
 .header-feedback * {
-    margin: 0px 0px 0px 5px;
     padding: var(--space-1);
     border: 1px solid var(--font-color);
     border-radius: 40px;
@@ -190,7 +190,6 @@ header .content {
         height: var(--space-4);
     }
     .header-wrapper{
-        max-height: var(--space-2);    
         justify-content: space-between;
         width: 100%;
     }
@@ -199,6 +198,7 @@ header .content {
     }
 
     .header-logo-additional {
+		justify-content: space-between;
         max-width: 150px;
         padding-left: var(--space-0-5);
     }
@@ -237,8 +237,24 @@ header .content {
 
     }
     .nav-btn{
-       display: block;
+		position: relative;
+		width: 36px;
+		height:  36px;
+       	display: block;
     }
+
+	.nav-btn__menu-btn {
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.nav-btn__menu-btn path {
+		fill: var(--color-red)
+	}
+
     .dropdown-link{
         flex-direction: column;
     }
