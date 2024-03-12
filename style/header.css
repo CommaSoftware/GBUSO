@@ -58,13 +58,13 @@ header .content {
 .header-logo-additional {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	padding: 0px 0px 0px var(--space-1);
   }
 
 /* Hover effect */
 .header-logo-additional:hover .header-dropdown-menu {
     display: flex;
+    transform: translateX(-10px) translateY(38px);
 }
 
 /* / */

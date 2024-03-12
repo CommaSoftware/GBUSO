@@ -21,6 +21,11 @@
     height: 100%;
     display: flex;
 }
+
+/* Hover effect */
+.dropdown-link.collapsed:hover .header-dropdown-menu{
+    display: flex;
+}
 /* Hover effect */
 .dropdown-link:hover .header-dropdown-menu{
     display: flex;
@@ -101,6 +106,9 @@
 }
 
 @media (max-width: 920px) {
+
+    
+
     .nav-curtain{
         position: absolute;
         background-color: var(--color-white-background);
@@ -159,6 +167,14 @@
 
 
 
+    /* Hover effect */
+    .dropdown-link.collapsed:hover .header-dropdown-menu{
+        display: inline;
+    }
+    /* Hover effect */
+    .dropdown-link:hover .header-dropdown-menu{
+        display: inline;
+    }
 
 
 
