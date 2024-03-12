@@ -282,3 +282,10 @@ header .content {
     }
 
 }
+
+@media (max-width: 420px) {
+    .header-feedback{
+        flex-direction: column;
+        margin: 0px 15px;
+    }
+}
