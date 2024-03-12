@@ -84,10 +84,10 @@
 .main-banner-background-wave {
     display: contents;
 }
-
 .main-banner-background-wave svg{
-    /* transform: translateY(5px); */
+    box-shadow: inset -1px -1px 1px 1px white;
 }
+
 
 /*
  *

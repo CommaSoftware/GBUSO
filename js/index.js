@@ -9,6 +9,8 @@ let overlayImgNameRef = document.querySelector(".overlay-img-name");
 let navBtnRef = document.querySelector('.nav-btn');
 let headerWrapperRef = document.querySelector(".header-wrapper");
 
+let collapseMenuBtnRefs = document.querySelectorAll(".menu-collapse-btn"); 
+
 
 let altImageName;
 let openedImgPath;
@@ -80,4 +82,26 @@ navBtnRef.addEventListener("click",()=>{
         console.log("not has");
         headerWrapperRef.classList.add("show");
     }
+});
+
+
+
+
+
+
+
+// Menu collapse button 
+
+collapseMenuBtnRefs.forEach(buttonRef => {
+    buttonRef.addEventListener("click", ()=>{
+        let divWrapperRef = buttonRef.parentElement;
+        let dropdownLinkRef = divWrapperRef.parentElement;
+
+        if(dropdownLinkRef.classList.contains("collapsed")){
+            dropdownLinkRef.classList.remove("collapsed");
+        }
+        else{
+            dropdownLinkRef.classList.add("collapsed");
+        }
+    });
 });

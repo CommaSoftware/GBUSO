@@ -670,6 +670,7 @@ article .field.full-text li{
 
 
 
+
  @media (max-width: 1180px) {
     .main-content{
         margin: 0px var(--space-2) 0px 0px;
@@ -753,7 +754,9 @@ article .field.full-text li{
     .footer-column ul li{
         margin: var(--space-0-5) 0px !important;
     }
-    
+    article p {
+        margin-bottom: var(--space-1);
+    }
  }
  @media (max-width: 550px) {
     .view.two{
@@ -799,4 +802,9 @@ article .field.full-text li{
     .card .card-content {
         padding: var(--space-1);
     }
+    .pagination-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
  }
