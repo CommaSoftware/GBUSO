@@ -58,8 +58,6 @@ if(overlayImgWrapperRef){
     });
 }
 // Image zoom effect (end)
-
-
 setTimeout(() => {
     if(!document.querySelector("#interactive-map")){
         document.querySelector("iframe").remove();
@@ -67,41 +65,15 @@ setTimeout(() => {
 }, 1000);
 
 
-
-
-
-
 //Header button handler
-
 navBtnRef.addEventListener("click",()=>{
-    if(headerWrapperRef.classList.contains("show")){
-        console.log("has");
-        headerWrapperRef.classList.remove("show");
-    }
-    else{
-        console.log("not has");
-        headerWrapperRef.classList.add("show");
-    }
+	headerWrapperRef.classList.toggle("show");
 });
 
 
-
-
-
-
-
 // Menu collapse button 
-
 collapseMenuBtnRefs.forEach(buttonRef => {
-    buttonRef.addEventListener("click", ()=>{
-        let divWrapperRef = buttonRef.parentElement;
-        let dropdownLinkRef = divWrapperRef.parentElement;
-
-        if(dropdownLinkRef.classList.contains("collapsed")){
-            dropdownLinkRef.classList.remove("collapsed");
-        }
-        else{
-            dropdownLinkRef.classList.add("collapsed");
-        }
-    });
+	buttonRef.addEventListener("click", ()=>{
+		buttonRef.parentElement.parentElement.classList.contains("toggle");
+	});
 });
