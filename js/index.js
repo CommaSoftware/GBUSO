@@ -74,6 +74,6 @@ navBtnRef.addEventListener("click",()=>{
 // Menu collapse button 
 collapseMenuBtnRefs.forEach(buttonRef => {
 	buttonRef.addEventListener("click", ()=>{
-		buttonRef.parentElement.parentElement.classList.contains("toggle");
+		buttonRef.parentElement.parentElement.classList.toggle("show");
 	});
 });

@@ -230,7 +230,6 @@ header .content {
 
     .nav-main .header-dropdown-menu{
         position: unset;
-        display: inline;
         padding: var(--space-0-5) var(--space-0-5) var(--space-0-5) var(--space-1) !important;
         margin: 0;
         transform: none;
